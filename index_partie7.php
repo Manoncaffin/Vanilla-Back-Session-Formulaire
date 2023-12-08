@@ -58,7 +58,15 @@
 
 <!-- Exercice 6 -->
 
-<!-- <form action = "./index_partie7.php" method="POST">
+<!-- <?php
+if(isset($_POST['prenom']) && isset($_POST['nom']) && isset($_POST['gender'])) {
+    echo "<p>" . $_POST['prenom'] . $_POST['nom'] . $_POST['gender'];
+}
+
+?> -->
+
+
+<!-- // <form action = "" method="POST">  On ne met rien dans action pour que l'info soit dans la même page.
     
     <label>Nom</label>
     <input type="text" placeholder="Nom" name="lastname"></input>
@@ -76,6 +84,8 @@
     <button type="submit">Envoyer</button>
 
 </form>  -->
+
+<!-- mettre => <?php } ?> à la fin du document -->
 
 <!-- Exercice 7  -->
 
