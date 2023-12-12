@@ -5,6 +5,15 @@ session_start();
 ?>
 
 
+<?php
+
+session_start();
+
+session_unset();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +22,22 @@ session_start();
     <title>Document</title>
 </head>
 <body>
+
+        <?php
+
+            if(isset($_SESSION["lastname"]) && !empty($_SESSION["lastname"])){
+                echo 'lastname : ' . $_SESSION["lastname"] . '<br>';
+            }
+
+            if(isset($_SESSION["firstname"]) && !empty($_SESSION["firstname"])){
+                echo 'firstname : ' . $_SESSION["firstname"] . '<br>';
+            }
+
+            if(isset($_SESSION["age"]) && !empty($_SESSION["age"])){
+                echo 'age : ' . $_SESSION["age"] . '<br>';
+            }
+
+        ?>
 
             <form action="./exercice_2_informations.php" method="post">
 
